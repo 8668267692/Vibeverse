@@ -1,0 +1,303 @@
+
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#10002b;
+    color:white;
+    min-height: 100vh;
+}
+
+html,h1{
+    background-color:#8840c6;
+    color: rgb(242, 239, 243);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+html,p{
+    color:white;
+    text-align: center;
+
+}
+
+
+
+html,navbar{
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    background: rgb(233, 70, 233);
+    border-bottom: 10px;
+    margin: 20px;
+    
+
+
+}
+
+
+
+.logo{
+    
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    
+   
+}
+
+.logo img{
+    border-radius: 12px;
+    padding: 20px;
+    margin: 18px;
+    background-color: white;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #faf6f6;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.nav a:hover{
+    color:#d68aff;
+}
+
+.brand{
+    display: flex;
+    width: 55px;
+    height: 60px;
+    align-items: center;
+    gap: 10px;
+    object-fit: contain;
+}
+
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #39084e;
+
+}
+
+.hero p{
+    margin-bottom: 25px;
+    height: 2px;
+}
+
+.hero input{
+    padding: 14px;
+    width: 300px;
+    max-width: 90%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+button{
+    background: #a43df0;
+    color:white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 8px;
+
+}
+
+button:hover{
+    background: #e04cff;
+}
+
+.section{
+    padding: 50px 6%;
+    text-align: center;
+}
+
+.section h2{
+    color: #d68aff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.card{
+    background: #291744;
+    padding: 22px;
+    border-radius: 15px;
+    width: 170px;
+    border: 1px solid #713da0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container{
+    width: 100;
+    height: 100;
+    
+}
+
+.category:hover{
+    background: #632b88;
+    transform: translateY(-6px);
+}
+
+.songs{
+    background: #24143b;
+    border: 1px solid #633b87;
+    padding: 18px;
+    border-radius: 16px;
+    width: 210px;
+    transition: 0.3s;
+
+
+}
+
+.songs:hover{
+    transform:translateY(-7px);
+    box-shadow: 0 5px 20px #8e35bd;
+
+
+}
+
+.songs img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12ppx;
+    margin-bottom: 12px;
+}
+
+.song h2{
+    margin: 10px 0;
+
+}
+
+.artist{
+    background: #24143b;
+    padding: 20px;
+    border-radius: 16px;
+    width: 220;
+    border: 1px solid #633b87;
+}
+
+.artist img{
+    
+    width: 140px;
+    height: 140px;
+    border-radius:50% ;
+    margin-bottom: 12px;
+}
+
+.podcast{
+    background: #24133b;
+    border: 1px solid #633b87;
+    width: 240px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.podcast p{
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+#playlistItems{
+    background: #24143b;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.about{
+    background: #1d1032;
+    line-height: 2;
+}
+
+.aboutp{
+    max-width: 750px;
+    margin: 12px auto;
+}
+
+form{
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea{
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #8b4ab6;
+    background: #24143b;
+    color: white;
+    outline: none;
+}
+
+form textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+.music-player{
+    background: #29163f;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    border-top: 1px solid #8b4ab6;
+}
+
+.music-player audio{
+    width: 300px;
+    max-width: 90%;
+
+}
+
+.footer{
+    background: #3c0f84;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+@media(max-width:700px)
+{
+    .navbar{
+        justify-content: center;
+    }
+
+    nav{
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero h1{
+        font-size:30px ;
+    }
+
+    .section{
+        padding: 35px 15px;
+    }
+
+}
